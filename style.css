@@ -77,16 +77,16 @@
 
   #gender-categories {
     display: flex;
-    justify-content: flex-start; /* Adjusted to flex-start if items should start from the left */
+    justify-content: flex-start;
     flex-wrap: wrap;
     padding: 40px 20px;
-    box-sizing: border-box; /* Makes sure padding doesn't affect the total width */
+    box-sizing: border-box;
   }
   
 
   .category-item {
     position: relative;
-    width: calc(40% - 40px); /* Subtracting total horizontal margins */
+    width: calc(40% - 40px);
     height: 500px;
     margin: 20px;
     background-size: cover;
@@ -94,7 +94,7 @@
     border-radius: 15px;
     overflow: hidden;
     transition: transform 0.3s ease;
-    box-sizing: border-box; /* Includes padding and border in the element's width */
+    box-sizing: border-box;
   }
   
   .category-link {
@@ -122,91 +122,85 @@
   
   
   .category-link:hover, .category-link:focus {
-    background-color: rgba(0, 0, 0, 0.5); /* Darken background slightly on hover */
-    color: #f5f4f2; /* Change text color on hover */
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #f5f4f2;
   }
   
   .category-item:hover {
-    transform: scale(1.05); /* Slightly enlarges the tile on hover */
+    transform: scale(1.05);
   }
   
   
   .category-item:hover .category-link {
-    background-color: rgba(0, 0, 0, 0.6); /* Darker background on hover for better readability */
+    background-color: rgba(0, 0, 0, 0.6);
   }
   #category-descriptions {
     display: flex;
     justify-content: flex-start;
-    margin: 50px 20px 100px 20px; /* Increased bottom margin */
+    margin: 50px 20px 100px 20px;
     padding: 20px;
-    background: #f9f9f9; /* Light background for the section */
+    background: #f9f9f9;
   }
   
   .description-item {
-    width: 45%; /* Sets the width for each description box */
+    width: 45%;
     padding: 20px;
     text-align: left;
-    background: white; /* White background for content contrast */
-    border-radius: 8px; /* Rounded corners for aesthetics */
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Soft shadow for depth */
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
   }
   
   .description-item h3 {
-    margin-bottom: 15px; /* Space below the heading */
-    color: #333; /* Dark text for heading */
+    margin-bottom: 15px;
+    color: #333;
   }
   
-  /* Fonts and Typography */
   h1, h2, h3, h4, h5, h6, .menu a {
     font-family: 'Roboto', sans-serif;
   }
   
-  /* Existing CSS styles */
-
-/* New styles for the Sustainable Fashion Explanation Section */
+ 
 #sustainable-fashion-explanation {
-  padding: 40px 20px; /* Adds padding around the text for better spacing */
-  background-color: #f5f5f5; /* Optional: Adds a light background color to differentiate the section from others */
+  padding: 40px 20px; 
+  background-color: #f5f5f5;
 }
 
 #sustainable-fashion-explanation .content {
-  max-width: 1200px; /* Ensures the content doesn't stretch too wide on larger screens */
-  margin: 0 auto; /* Centers the content block */
-  padding: 20px; /* Adds padding inside the content block for better readability */
+  max-width: 1200px; 
+  margin: 0 auto;
+  padding: 20px;
 }
 
 #sustainable-fashion-explanation h2 {
-  margin-bottom: 20px; /* Adds more space below the heading for visual separation */
-  color: #333; /* Ensures the heading stands out */
+  margin-bottom: 20px; 
+  color: #333;
 }
 
 #sustainable-fashion-explanation p {
-  margin-bottom: 20px; /* Adds space between paragraphs for better readability */
-  line-height: 1.6; /* Increases line height for easier reading */
-  color: #666; /* A softer color for the text, which can be easier on the eyes */
+  margin-bottom: 20px;
+  line-height: 1.6; 
+  color: #666; 
 }
 
-/* Continue with existing CSS for responsive adjustments, etc. */
 
   
-  /* Responsive Styles */
   @media screen and (max-width: 1200px) {
     .image-link {
-      /* For medium screens, each image takes half of the space minus the margin of the next image */
-      flex-basis: calc(50% - 4px); /* Adjust if needed */
+    
+      flex-basis: calc(50% - 4px); 
     }
   }
   
   @media screen and (max-width: 768px) {
     .image-link {
-      /* Full width on small screens */
+    
       flex-basis: 100%;
-      height: 300px; /* Adjust height for small screens if necessary */
-      margin-right: 0; /* Remove right margin on small screens */
+      height: 300px;
+      margin-right: 0; 
     }
   }
     
-    /* Since we're using 'flex: 1', we don't need 'flex-basis' here anymore, but it's okay to leave it for clarity */
   
   
     nav .menu {
@@ -215,7 +209,6 @@
     }
   
   
-  /* Footer Styles */
   footer {
     background: #333;
     color: white;
