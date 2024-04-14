@@ -1,0 +1,226 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .logo{
+    height: 50%;
+    width: 25%;
+  
+    float: left;
+
+}
+.logo img{
+    width:100px;
+    height: 50px;
+    margin-left: 50px;
+    margin-top: 10px;
+}
+
+  body, html {
+    height: 100%;
+    font-family: 'Open Sans', sans-serif;
+  }
+  
+  /* Header Styles */
+  header {
+    background: #FFF;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+  }
+  
+  nav .logo {
+    font-weight: bold;
+    font-size: 24px;
+  }
+  
+  nav .menu a {
+    text-decoration: none;
+    margin: 0 10px;
+    color: #333;
+    transition: color 0.3s ease;
+  }
+  
+  nav .menu a:hover {
+    color: #77B0AA;
+  }
+  
+  /* Main Image Styles */
+  #main-image {
+    background: url('https://i.ibb.co/541mhSc/main-image.jpg') no-repeat center center/cover;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    position: relative;
+    text-align: center;
+    padding: 0 30px;
+  }
+  
+  #main-image .overlay {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+  }
+
+  #gender-categories {
+    display: flex;
+    justify-content: flex-start; /* Adjusted to flex-start if items should start from the left */
+    flex-wrap: wrap;
+    padding: 40px 20px;
+    box-sizing: border-box; /* Makes sure padding doesn't affect the total width */
+  }
+  
+
+  .category-item {
+    position: relative;
+    width: calc(40% - 40px); /* Subtracting total horizontal margins */
+    height: 500px;
+    margin: 20px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    box-sizing: border-box; /* Includes padding and border in the element's width */
+  }
+  
+  .category-link {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 2em;
+    text-decoration: none;
+    background-color: rgba(0, 0, 0, 0);
+    transition: background-color 0.5s ease, color 0.3s ease;
+  }
+  
+  .category-link:hover, .category-link:focus {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #eef3f2;
+  }
+  
+  .category-item:hover {
+    transform: scale(1.05);
+  }
+  
+  
+  .category-link:hover, .category-link:focus {
+    background-color: rgba(0, 0, 0, 0.5); /* Darken background slightly on hover */
+    color: #f5f4f2; /* Change text color on hover */
+  }
+  
+  .category-item:hover {
+    transform: scale(1.05); /* Slightly enlarges the tile on hover */
+  }
+  
+  
+  .category-item:hover .category-link {
+    background-color: rgba(0, 0, 0, 0.6); /* Darker background on hover for better readability */
+  }
+  #category-descriptions {
+    display: flex;
+    justify-content: flex-start;
+    margin: 50px 20px 100px 20px; /* Increased bottom margin */
+    padding: 20px;
+    background: #f9f9f9; /* Light background for the section */
+  }
+  
+  .description-item {
+    width: 45%; /* Sets the width for each description box */
+    padding: 20px;
+    text-align: left;
+    background: white; /* White background for content contrast */
+    border-radius: 8px; /* Rounded corners for aesthetics */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Soft shadow for depth */
+  }
+  
+  .description-item h3 {
+    margin-bottom: 15px; /* Space below the heading */
+    color: #333; /* Dark text for heading */
+  }
+  
+  /* Fonts and Typography */
+  h1, h2, h3, h4, h5, h6, .menu a {
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  /* Existing CSS styles */
+
+/* New styles for the Sustainable Fashion Explanation Section */
+#sustainable-fashion-explanation {
+  padding: 40px 20px; /* Adds padding around the text for better spacing */
+  background-color: #f5f5f5; /* Optional: Adds a light background color to differentiate the section from others */
+}
+
+#sustainable-fashion-explanation .content {
+  max-width: 1200px; /* Ensures the content doesn't stretch too wide on larger screens */
+  margin: 0 auto; /* Centers the content block */
+  padding: 20px; /* Adds padding inside the content block for better readability */
+}
+
+#sustainable-fashion-explanation h2 {
+  margin-bottom: 20px; /* Adds more space below the heading for visual separation */
+  color: #333; /* Ensures the heading stands out */
+}
+
+#sustainable-fashion-explanation p {
+  margin-bottom: 20px; /* Adds space between paragraphs for better readability */
+  line-height: 1.6; /* Increases line height for easier reading */
+  color: #666; /* A softer color for the text, which can be easier on the eyes */
+}
+
+/* Continue with existing CSS for responsive adjustments, etc. */
+
+  
+  /* Responsive Styles */
+  @media screen and (max-width: 1200px) {
+    .image-link {
+      /* For medium screens, each image takes half of the space minus the margin of the next image */
+      flex-basis: calc(50% - 4px); /* Adjust if needed */
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .image-link {
+      /* Full width on small screens */
+      flex-basis: 100%;
+      height: 300px; /* Adjust height for small screens if necessary */
+      margin-right: 0; /* Remove right margin on small screens */
+    }
+  }
+    
+    /* Since we're using 'flex: 1', we don't need 'flex-basis' here anymore, but it's okay to leave it for clarity */
+  
+  
+    nav .menu {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+  
+  /* Footer Styles */
+  footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px;
+  }
+  
